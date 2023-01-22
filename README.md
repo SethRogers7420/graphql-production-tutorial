@@ -2,5 +2,7 @@
 
 TODO:
 1. Setup tsc and Node.
-1. Setup prettier on save
-2. Setup SWC
+2. Setup env.
+3. Setup absolute paths.
+4. Setup prettier on save
+5. Setup SWC
