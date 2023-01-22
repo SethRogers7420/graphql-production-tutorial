@@ -1,0 +1,7 @@
+"""
+The entry point for read operations on the graph.
+Queries can live in other files with `extend type Query {` instead of all being added here
+"""
+type Query {
+  hello: String!
+}
