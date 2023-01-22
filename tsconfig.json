@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    // Use the root URL as the absolute path, we run ts-node/register to resolve these at runtime as TypeScript does not transpile them.
+    "baseUrl": ".",
+    "sourceMap": true,
+    "strictPropertyInitialization": false,
+    "target": "es2022",
+    "lib": ["es2022"],
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": true
+  },
+  "exclude": ["dist", "test", "iac"],
+  // Use swc with ts-node
+  "ts-node": {
+    "swc": true
+  }
+}
