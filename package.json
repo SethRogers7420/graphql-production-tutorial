@@ -2,7 +2,7 @@
   "name": "graphql-production-tutorial",
   "packageManager": "yarn@3.3.1",
   "scripts": {
-    "dev": "yarn run prepare & yarn run start:dev",
+    "start": "yarn run prepare & yarn run start:dev",
     "start:dev": "dotenv -c development -- nodemon --watch './src/**/*.ts' --watch 'tsconfig.json' --exec 'node --inspect -r ts-node/register -r tsconfig-paths/register' ./src/index.ts",
     "build": "yarn run generate:graphql && tsc && rimraf ./**/*.ts",
     "lint": "eslint . --ext .js,.ts --cache",
